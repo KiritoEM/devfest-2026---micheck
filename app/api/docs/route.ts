@@ -8,7 +8,7 @@ const html = `<!doctype html>
     <title>MiCheck API - Swagger UI</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/swagger-ui.css"
+      href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.17.14/swagger-ui.css"
     />
     <style>
       body {
@@ -19,7 +19,7 @@ const html = `<!doctype html>
   </head>
   <body>
     <div id="swagger-ui"></div>
-    <script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/swagger-ui-bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.17.14/swagger-ui-bundle.js"></script>
     <script>
       window.onload = function () {
         if (!window.SwaggerUIBundle) {
@@ -32,6 +32,8 @@ const html = `<!doctype html>
           dom_id: "#swagger-ui",
           deepLinking: true,
           persistAuthorization: true,
+          displayRequestDuration: true,
+          tryItOutEnabled: true,
         });
       };
     </script>
